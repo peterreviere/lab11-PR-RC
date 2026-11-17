@@ -29,6 +29,15 @@ def logarithm(a, b):
 def exponent(a, b):
     return a ** b
 
+def hypotenuse(a, b):
+    return (a ** 2 + b ** 2) ** 1/2
+
+def square_root(a):
+    if a > 0:
+        return a ** (1/2)
+    else:
+        raise ValueError
+
 def sub(a, b):
     return a - b
 
