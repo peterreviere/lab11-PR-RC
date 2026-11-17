@@ -1,9 +1,6 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
+# https://github.com/peterreviere/lab11-PR-RC
+# Partner 1: Peter Reviere
+# Partner 2: Renato Corrales
 import math
 
 def add(a, b):
@@ -21,19 +18,19 @@ def divide(a, b):
     else:
         return b / a
 def logarithm(a, b):
-    if a == 0:
+    if a < 0 or b < 1:
         raise ValueError
     else:
-        return math.log(b, a)
+        return math.log(a, b)
 
 def exponent(a, b):
     return a ** b
 
 def hypotenuse(a, b):
-    return (a ** 2 + b ** 2) ** 1/2
+    return (a ** 2 + b ** 2) ** (1/2)
 
 def square_root(a):
-    if a > 0:
+    if a >= 0:
         return a ** (1/2)
     else:
         raise ValueError
@@ -50,10 +47,10 @@ def div(a, b):
     else:
         return b / a
 def log(a, b):
-    if a == 0:
+    if a < 0 or b < 1:
         raise ValueError
     else:
-        return math.log(b, a)
+        return math.log(a, b)
 
 def exp(a, b):
     return a ** b
